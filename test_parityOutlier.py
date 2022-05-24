@@ -18,4 +18,15 @@ def test_parityOutlier_WrongListEntryType() -> None:
 def test_parityOutlier_ShortList() -> None:
     """list should have minimum 3 entries, return False"""
     parameter=[1,2]
-    assert parityOutlier.find_outlier(parameter) == False , "list is too short, should return false"        
+    assert parityOutlier.find_outlier(parameter) == False , "list is too short, should return false"
+
+#2
+def test_parityOutlier_List0() -> None:
+    """[1,1,2] -> 2"""
+    parameter=[1,1,2]
+    assert parityOutlier.find_outlier(parameter) == 2 , "[1,1,2] -> 2"
+
+def test_parityOutlier_List1() -> None:
+    """[2, 4, 6, 8, 10, 3] -> 3"""
+    parameter=[2, 4, 6, 8, 10, 3]
+    assert parityOutlier.find_outlier(parameter) == 3 , "[2, 4, 6, 8, 10, 3] -> 3"
