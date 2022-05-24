@@ -16,7 +16,7 @@ assuming there might be none #GREEN
 - if not one of counters
 - return the counter which is equal to 1
 
-assuming there is always a parity outlier
+assuming there is always a parity outlier #REFACTOR
 - loop remainder list:
     - if counter for this entry is 0 and other counter is > 1, return integer from original set
     - increment counter for this entry
