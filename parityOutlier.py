@@ -1,7 +1,13 @@
 def find_outlier (integers=None):
     if not ValidInput(integers): return False
-    pass
-
+    remaindersList=[x%2 for x in integers]
+    sumeven=remaindersList.count(0)
+    sumodd=remaindersList.count(1)
+    if sumeven == 1 and sumodd > 1:
+        return integers[remaindersList.index(0)]
+    elif sumodd==1 and sumeven>1:
+        return integers[remaindersList.index(1)]
+    else: return False
 
 def ValidInput(a=None):
     if ('a' in vars() # param defined
