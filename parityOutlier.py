@@ -1,4 +1,4 @@
-def find_outlier (integers=None):
+def xfind_outlier (integers=None):
     if not ValidInput(integers): return False
     remaindersList=[x%2 for x in integers]
     if sum(remaindersList)==1:
