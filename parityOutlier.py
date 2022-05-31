@@ -1,4 +1,4 @@
-def find_outlier(integers=None):
+def     find_outlier( integers=None ):
 
     if findoutlier(integers):
         if not ValidInput(integers):
@@ -9,7 +9,6 @@ def find_outlier(integers=None):
         else:
             return integers[remaindersList.index(0)]
 
-
 def ValidInput(a=None ):
     if (
         "a" in vars()  # param defined
@@ -18,7 +17,5 @@ def ValidInput(a=None ):
         and (all(isinstance(n, int) for n in a))
     ):  # list entries are ints
         return True
-
-
 def findoutlier(integers=None):
     return True
