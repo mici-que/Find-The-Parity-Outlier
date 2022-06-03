@@ -1,7 +1,7 @@
 def findOutlier(integers=None):
     if not validInput(integers):
         return False
-    remaindersList = [x % 2 for x in integers]
+    remaindersList = createRemainderslist(integers)
     if sum(remaindersList) == 1:
         return integers[remaindersList.index(1)]
     else:
@@ -16,3 +16,7 @@ def validInput(a=None):
         and (all(isinstance(n, int) for n in a))
     ):  # list entries are ints
         return True
+
+
+def createRemainderslist(integers):
+    return [x % 2 for x in integers]
