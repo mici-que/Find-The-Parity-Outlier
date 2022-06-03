@@ -1,5 +1,5 @@
-def find_outlier(integers=None):
-    if not ValidInput(integers):
+def findOutlier(integers=None):
+    if not validInput(integers):
         return False
     remaindersList = [x % 2 for x in integers]
     if sum(remaindersList) == 1:
@@ -8,7 +8,7 @@ def find_outlier(integers=None):
         return integers[remaindersList.index(0)]
 
 
-def ValidInput(a=None):
+def validInput(a=None):
     if (
         "a" in vars()  # param defined
         and isinstance(a, list)  # param is list

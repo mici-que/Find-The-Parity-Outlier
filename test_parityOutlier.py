@@ -1,5 +1,6 @@
 import parityOutlier
 
+
 # 1
 def testparityOutlier_NoInput() -> None:
     """If no parameters passed, return False"""
