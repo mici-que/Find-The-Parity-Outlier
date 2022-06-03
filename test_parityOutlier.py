@@ -30,6 +30,7 @@ def testparityOutlier_ShortList() -> None:
         parityOutlier.find_outlier(parameter) is False
     ), "list is too short, should return false"
 
+
 # 2
 def testparityOutlier_List0() -> None:
     """[1,1,2] -> 2"""
